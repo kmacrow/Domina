@@ -1,0 +1,22 @@
+DomFS - Document Object Model Filesystem
+========================================
+
+DomFS is a FUSE implementation that exposes the DOM of a participating
+web page as a filesystem.
+
+The DomFS client driver (DomFS.js) can be included in any HTML5 page,
+allowing the page to browsed like a regular filesystem.
+
+The code
+========
+
+DomFServer.py - Implements a WebSocket server
+DomFS.py      - Implements the FUSE bindings
+DomFS.js 	  - Implements the filesystem operations on its host DOM.
+
+Tests
+=====
+
+test-tree.py  - Nicely prints a DomFS directory tree.
+test-style.py - Recursively applies arbitrary CSS styling to tags of a given type.
+test-spell.py - Recursively spell-corrects the contents of tags of a given type.
